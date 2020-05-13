@@ -1,0 +1,7 @@
+extends layout
+
+block content
+  ul.list-group
+    each datas, i in data
+      li.list-group-item
+        a(href="/data/" + datas._id)= datas.name

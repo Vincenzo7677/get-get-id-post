@@ -1,0 +1,14 @@
+extends layout
+
+block content
+
+ form(method='POST', action='/data')
+  .form-group
+    label Name:
+    input.form-control(name='name', type='text')
+  .form-group
+    label Text:
+    input.form-control(name='text', type='text')
+    
+  
+  button.btn.btn-primary(type='submit') Submit
